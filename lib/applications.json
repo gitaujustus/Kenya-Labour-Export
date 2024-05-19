@@ -1,0 +1,314 @@
+{
+  "applications": [
+    {
+      "id": 1,
+      "applicantName": "John Doe",
+      "jobTitle": "Software Engineer",
+      "companyName": "TechCo Ltd.",
+      "applicationDate": "2024-05-15",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Pending"
+    },
+    {
+      "id": 2,
+      "applicantName": "Jane Smith",
+      "jobTitle": "Graphic Designer",
+      "companyName": "Creative Designs Inc.",
+      "applicationDate": "2024-05-20",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 3,
+      "applicantName": "Alice Johnson",
+      "jobTitle": "Marketing Manager",
+      "companyName": "MarketMasters Ltd.",
+      "applicationDate": "2024-05-25",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Rejected"
+    },
+    {
+      "id": 4,
+      "applicantName": "Michael Brown",
+      "jobTitle": "Data Analyst",
+      "companyName": "Data Insights Co.",
+      "applicationDate": "2024-05-30",
+      "category": "Engineering",
+      "country": "Canada",
+      "status": "Pending"
+    },
+    {
+      "id": 5,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 6,
+      "applicantName": "John Doe",
+      "jobTitle": "Software Engineer",
+      "companyName": "TechCo Ltd.",
+      "applicationDate": "2024-05-15",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Pending"
+    },
+    {
+      "id": 7,
+      "applicantName": "Jane Smith",
+      "jobTitle": "Graphic Designer",
+      "companyName": "Creative Designs Inc.",
+      "applicationDate": "2024-05-20",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 8,
+      "applicantName": "Alice Johnson",
+      "jobTitle": "Marketing Manager",
+      "companyName": "MarketMasters Ltd.",
+      "applicationDate": "2024-05-25",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Rejected"
+    },
+    {
+      "id": 9,
+      "applicantName": "Michael Brown",
+      "jobTitle": "Data Analyst",
+      "companyName": "Data Insights Co.",
+      "applicationDate": "2024-05-30",
+      "category": "Engineering",
+      "country": "Canada",
+      "status": "Pending"
+    },
+    {
+      "id": 10,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 11,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 12,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 13,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 14,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 15,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 16,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 17,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 18,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 19,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 20,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 21,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 22,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 23,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 24,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 25,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 26,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 27,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 28,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 29,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 30,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    },
+    {
+      "id": 31,
+      "applicantName": "David Clark",
+      "jobTitle": "Customer Support Specialist",
+      "companyName": "SupportPro Solutions",
+      "applicationDate": "2024-06-05",
+      "category": "Technology",
+      "country": "Canada",
+      "status": "Approved"
+    }
+  ]
+}

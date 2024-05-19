@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/jobs/apply/page.tsx", "components/gok/linechart.js", "app/admin/applications/page.js", "components/states/state-navigation.js"],
   "exclude": ["node_modules"]
 }

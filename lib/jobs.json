@@ -1,0 +1,199 @@
+[
+  {
+    "id": 2,
+    "title": "Data Analyst",
+    "country": {
+      "usa": {
+        "DataCorp Inc.": {
+            "jobId":"1",
+          "description": "Leverage cutting-edge tools to extract insights from complex datasets and drive data-driven decision making.",
+          "qualification": "Bachelor's degree in a quantitative field (e.g., Statistics, Computer Science, Mathematics) and 2+ years of relevant experience. Strong analytical skills and proficiency in SQL, Python, and data visualization tools.",
+          "deadline": "2024-07-01",
+          "slots": "25"
+        },
+        "AnalyticsPlus": {
+            "jobId":"2",
+          "description": "Join our dynamic team and uncover hidden patterns in data to fuel business growth and innovation.",
+          "qualification": "Master's degree in Data Science, Statistics, or a related field. Proven expertise in statistical modeling, machine learning, and data mining. Excellent communication skills to present insights effectively.",
+          "deadline": "2024-06-30",
+          "slots": "15"
+        },
+        "DataViz Solutions": {
+            "jobId":"3",
+          "description": "Craft compelling data visualizations that bring complex information to life and drive strategic decision-making.",
+          "qualification": "Bachelor's degree in Information Design, Computer Science, or a related field. Proficiency in data visualization tools (e.g., Tableau, Power BI) and strong design skills. Experience in data storytelling and presentation.",
+          "deadline": "2024-07-15",
+          "slots": "20"
+        }
+      },
+      "canada": {
+        "NorthernAnalytics Ltd.": {
+            "jobId":"4",
+          "description": "Leverage advanced analytical techniques to uncover hidden insights and drive business growth in diverse industries.",
+          "qualification": "Master's degree in Data Analytics, Statistics, or a related field. Expertise in predictive modeling, machine learning, and big data technologies. Strong problem-solving skills and attention to detail.",
+          "deadline": "2024-07-10",
+          "slots": "18"
+        },
+        "DataDriven Solutions": {
+            "jobId":"5",
+          "description": "Utilize your analytical prowess to transform raw data into actionable insights that drive strategic decision-making.",
+          "qualification": "Bachelor's degree in a quantitative field (e.g., Mathematics, Economics, Computer Science) and 3+ years of relevant experience. Proficiency in SQL, Python, and data mining techniques. Strong communication and collaboration skills.",
+          "deadline": "2024-06-25",
+          "slots": "22"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "Product Manager",
+    "country": {
+      "usa": {
+        "jobId":"6",
+        "InnovativeTech": {
+          "description": "Drive the strategic vision, roadmap, and successful execution of cutting-edge products that redefine industries.",
+          "qualification": "Bachelor's degree in a technical or business field and 5+ years of product management experience. Strong leadership, communication, and strategic thinking skills. Proven ability to understand customer needs and translate them into innovative solutions.",
+          "deadline": "2024-07-20",
+          "slots": "8"
+        },
+        "ProductPro Solutions": {
+            "jobId":"7",
+          "description": "Collaborate with cross-functional teams to conceptualize, develop, and launch market-leading products that delight customers.",
+          "qualification": "Bachelor's degree in a relevant field and 3+ years of product management experience. Excellent analytical and problem-solving skills. Ability to prioritize requirements and balance competing demands.",
+          "deadline": "2024-06-30",
+          "slots": "12"
+        }
+      },
+      "uk": {
+        "BritInnovations Ltd.": {
+            "jobId":"8",
+          "description": "Shape the future of technology by driving the end-to-end product lifecycle, from ideation to launch and beyond.",
+          "qualification": "Master's degree in a technical or business field and 7+ years of product management experience in the technology sector. Strong leadership, strategic thinking, and market analysis skills. Ability to thrive in a fast-paced, dynamic environment.",
+          "deadline": "2024-07-15",
+          "slots": "6"
+        },
+        "ProductExcellence": {
+            "jobId":"9",
+          "description": "Lead cross-functional teams in developing innovative products that solve real-world problems and create exceptional user experiences.",
+          "qualification": "Bachelor's degree in a relevant field and 4+ years of product management experience. Excellent communication, stakeholder management, and prioritization skills. Passion for understanding customer needs and driving product success.",
+          "deadline": "2024-07-01",
+          "slots": "10"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "title": "UX Designer",
+    "country": {
+      "australia": {
+        "DesignInnovations": {
+            "jobId":"10",
+          "description": "Craft intuitive and visually stunning digital experiences that captivate users and drive product success.",
+          "qualification": "Bachelor's degree in Design, Human-Computer Interaction, or a related field. Proficiency in design tools (e.g., Figma, Adobe XD) and prototyping. Strong understanding of user-centered design principles and usability best practices.",
+          "deadline": "2024-07-10",
+          "slots": "15"
+        },
+        "UXMasters": {
+            "jobId":"11",
+          "description": "Join our team of creative problem-solvers and design user experiences that delight and engage audiences across diverse platforms.",
+          "qualification": "Bachelor's degree in Interaction Design, Human Factors, or a related field. 3+ years of experience in UX design, including user research, wireframing, and usability testing. Strong portfolio showcasing user-centered design solutions.",
+          "deadline": "2024-06-25",
+          "slots": "12"
+        }
+      },
+      "newzealand": {
+        "KiwiUXDesign": {
+            "jobId":"12",
+          "description": "Collaborate with cross-functional teams to create intuitive and accessible digital experiences that exceed user expectations.",
+          "qualification": "Bachelor's degree in Design, Human-Computer Interaction, or a related field. Proficiency in design tools and prototyping. Strong understanding of accessibility and inclusive design principles.",
+          "deadline": "2024-07-15",
+          "slots": "10"
+        },
+        "DesignExpertsNZ": {
+            "jobId":"13",
+          "description": "Shape the future of user experiences by designing innovative solutions that seamlessly blend form and function.",
+          "qualification": "Master's degree in Interaction Design, Human Factors, or a related field. 5+ years of experience in UX design, including user research, design thinking, and usability testing. Strong portfolio showcasing end-to-end design solutions.",
+          "deadline": "2024-06-30",
+          "slots": "8"
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "title": "Cybersecurity Analyst",
+    "country": {
+      "usa": {
+        "CyberShieldCorp": {
+            "jobId":"14",
+          "description": "Protect critical systems and data by identifying, analyzing, and mitigating potential security threats and vulnerabilities.",
+          "qualification": "Bachelor's degree in Computer Science, Cybersecurity, or a related field. Knowledge of security principles, techniques, and tools (e.g., firewalls, intrusion detection systems). Strong analytical and problem-solving skills.",
+          "deadline": "2024-07-25",
+          "slots": "20"
+        },
+        "SecureOps Solutions": {
+            "jobId":"15",
+          "description": "Join our team of security experts and play a crucial role in safeguarding organizational assets from cyber threats.",
+          "qualification": "Bachelor's degree in Information Security, Computer Science, or a related field. Hands-on experience with security incident response, risk assessment, and security monitoring. Familiarity with industry best practices and compliance standards.",
+          "deadline": "2024-07-10",
+          "slots": "18"
+        }
+      },
+      "canada": {
+        "CanadaCyberDefense": {
+            "jobId":"16",
+          "description": "Utilize cutting-edge technologies and methodologies to protect critical infrastructure and sensitive data from cyber threats.",
+          "qualification": "Master's degree in Cybersecurity, Computer Science, or a related field. Proven experience in penetration testing, vulnerability assessments, and incident response. Strong understanding of security protocols and industry regulations.",
+          "deadline": "2024-07-20",
+          "slots": "15"
+        },
+        "NorthernSecure Inc.": {
+            "jobId":"17",
+          "description": "Collaborate with cross-functional teams to develop and implement robust security strategies that safeguard organizational assets.",
+          "qualification": "Bachelor's degree in Computer Science, Information Security, or a related field. Expertise in security tools and technologies (e.g., firewalls, IDS/IPS, SIEM). Strong analytical and problem-solving skills, with the ability to effectively communicate technical information.",
+          "deadline": "2024-07-05",
+          "slots": "22"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "title": "Digital Marketing Specialist",
+    "country": {
+      "uk": {
+        "DigitalBrandMasters": {
+            "jobId":"18",
+          "description": "Drive strategic digital marketing campaigns that captivate audiences and elevate brand awareness across multiple channels.",
+          "qualification": "Bachelor's degree in Marketing, Communications, or a related field. Proven experience in digital marketing strategies, including SEO, SEM, social media, and email marketing. Strong analytical skills and proficiency in marketing automation tools.",
+          "deadline": "2024-07-15",
+          "slots": "12"
+        },
+        "OnlineMarketingPros": {
+            "jobId":"19",
+          "description": "Develop and execute cutting-edge digital marketing strategies that drive engagement, conversions, and business growth.",
+          "qualification": "Bachelor's degree in Marketing, Advertising, or a related field. 3+ years of experience in digital marketing, including content creation, social media management, and data analysis. Strong creativity and ability to stay up-to-date with industry trends.",
+          "deadline": "2024-06-30",
+          "slots": "10"
+        }
+      },
+      "germany": {
+        "DigitalMarketingGmbH": {
+            "jobId":"20",
+          "description": "Leverage data-driven insights to create impactful digital marketing campaigns that resonate with target audiences.",
+          "qualification": "Master's degree in Marketing, Business Analytics, or a related field. Proven expertise in digital marketing strategies, including SEO, PPC, and analytics. Strong data analysis and project management skills.",
+          "deadline": "2024-07-20",
+          "slots": "8"
+        },
+        "OnlineMarketingExperts": {
+            "jobId":"21",
+          "description": "Join our dynamic team and drive innovative digital marketing solutions that elevate brand visibility and customer engagement.",
+          "qualification": "Bachelor's degree in Marketing, Communications, or a related field. 5+ years of experience in digital marketing, including social media marketing, email marketing, and content creation. Strong communication and collaboration skills.",
+          "deadline": "2024-07-05",
+          "slots": "14"
+        }
+      }
+    }
+  }
+]

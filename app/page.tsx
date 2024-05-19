@@ -1,113 +1,217 @@
+"use client";
+import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { LuSchool2 } from "react-icons/lu";
+import { RiFundsFill } from "react-icons/ri";
+import { FcRules } from "react-icons/fc";
+import { GiGraduateCap } from "react-icons/gi";
+import { FaQuoteLeft } from "react-icons/fa";
+import SuccesfulDeproyment from "@/components/succesfulDeproyment";
 
 export default function Home() {
+  const [imageIndex, setImageIndex] = useState(0);
+  const imageRef:any = useRef(null);
+  const images = [
+    "/images/GRADUATES.jpeg",
+    "/images/labor.jpg",
+    "/images/image.png",
+  ];
+
+  useEffect(() => {
+    const swipeInterval = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(swipeInterval);
+  }, []);
+
+  useEffect(() => {
+    if (imageRef.current) {
+      imageRef.current.src = images[imageIndex];
+    }
+  }, [imageIndex]);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="bg-[#111827]">
+      {/* hero section */}
+      <div className="bg-gray-200 min-h-[60vh] md:min-h-[80vh] relative overflow-hidden">
+        <Image
+          width={1920}
+          height={1080}
+          ref={imageRef}
+          src={images[imageIndex]}
+          className="object-cover w-full h-full absolute top-0 left-0 transition-transform duration-1000 ease-in-out"
+          alt="research"
+        />
+        {/* Dark overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+          <h2 className=" w-[70vw] md:w-[50vw] text-3xl md:text-5xl mb-5 font-bold">
+            KENYA LABOR EXPORT SYSTEM
+          </h2>
+          <p className="mb-10">Opportunity Beyond Boundaries.</p>
+          <Link
+            href={"/"}
+            className="text-[#ffffff]  rounded-md px-10 py-4 my-12 bg-gradient-to-r from-[#192F59] to-[#0f59e2]"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Get Started
+          </Link>
         </div>
       </div>
+      <section>
+        <div className="w-[90vw] hidden md:block md:w-[80vw] h-[30vh] sm:h-[20vh] m-auto bg-slate-300 rounded-md mt-[-40px] relative">
+          <img
+            src="/images/from-kenya.jpg"
+            className="object-cover w-full h-full absolute top-0 left-0 transition-transform duration-1000 ease-in-out rounded-md"
+            alt="research"
+          />
+          {/* Dark overlay */}
+          <div className="absolute top-0 left-0 w-full h-full rounded-md bg-[#192F59] opacity-90 z-10"></div>
+          <div className="rounded-sm flex flex-col justify-center items-center p-4 z-20 relative text-md md:text-lg w-[80vw] text-white text-sm sm:text-md md:text-center">
+            <p className="">
+              {" "}
+              Partnering with 20+ countries across Asia, Europe, Africa, and the
+              Americas, we're dedicated to creating employment opportunities for
+              Kenyan citizens. With over 3000 vacancies monthly, we offer
+              diverse job options, fostering career growth and economic
+              prosperity.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className=" bg-slate-800 text-gray-100 px-5 md:px-20 py-10 my-7 mx-2 md:mx-10 rounded-xl">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center">
+          <img src="/images/prezo.jpg" className="h-72 md:h-96 rounded-xl" alt=""  />
+          <div className="">
+            <FaQuoteLeft size={76} />
+            <p className="text-lg font-bold ">
+              We want to get at least one million export from Kenya. We must be
+              intentional and deliberate in creating job opportunities for
+              Kenyans so that we can improve their incomes and drive our
+              progress.
+            </p>
+            <p className="pt-5">
+              <span className="font-bold text-gray-400">H.E Willian Ruto</span>
+              -President of Kenya
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      {/* services */}
+      <section className="bg-slate-800 text-gray-300 mx-2 md:mx-10 my-10 rounded-xl px-5 py-10 md:px-20 ">
+        <h2 className="text-center font-bold text-gray-100 text-xl md:text-2xl my-5">Our Services</h2>
+        <div className="flex flex-wrap gap-3">
+          <div className="md:w-1/3 p-5 hover:bg-slate-700 transition duration-500 ease-in-out  md:mx-auto border border-gray-600 rounded-xl ">
+            <ul className=" space-y-2">
+              <li className="text-gray-100 font-semibold">
+                Job Matching and Placement:
+              </li>
+            </ul>
+            <p className="">
+              Connects skilled Kenyan workers with international job
+              opportunities that match their qualifications.
+            </p>
+          </div>
+          <div className="md:w-1/3 hover:bg-slate-700 transition duration-500 ease-in-out  p-5 md:mx-auto border border-gray-600 rounded-xl">
+            <ul className="space-y-2">
+              <li className="text-gray-100 font-semibold">
+                Pre-Departure Training and Orientation:
+              </li>
+            </ul>
+            <p>
+              Provides cultural orientation, language training, and information
+              on labor laws of the destination country.
+            </p>
+          </div>
+          <div className="md:w-1/3 hover:bg-slate-700 transition duration-500 ease-in-out  p-5 md:mx-auto border  border-gray-600 rounded-xl">
+            <ul className="space-y-2">
+              <li className="text-gray-100 font-semibold">
+                Legal and Documentation Assistance:
+              </li>
+            </ul>
+            <p>
+              Assists with visa applications, work permits, and other necessary
+              legal documentation for overseas employment.
+            </p>
+          </div>
+          <div className="md:w-1/3 hover:bg-slate-700 transition duration-500 ease-in-out p-5 md:mx-auto border border-gray-600 rounded-xl">
+            <ul className="space-y-2">
+              <li className="text-gray-100 font-semibold">
+                Worker Welfare and Support Services:
+              </li>
+            </ul>
+            <p>
+              Offers ongoing support to Kenyan workers abroad, including
+              emergency assistance, counseling, and well-being checks.
+            </p>
+          </div>
+          <div className="md:w-1/3 hover:bg-slate-700 transition duration-500 ease-in-out p-5 md:mx-auto border border-gray-600 rounded-xl">
+            <ul className="space-y-2">
+              <li className="text-gray-100 font-semibold">
+                Feedback and Grievance Readressal:
+              </li>
+            </ul>
+            <p>
+              Facilitates a platform for workers to provide feedback on their
+              employment experience and seek help in resolving any grievances.
+            </p>
+          </div>
+        </div>
+      </section>
+        
+        {/* Our contracts */}
+      <section className=" h-[60vh] md:h-[70vh] bg-slate-200 relative pt-6 md:pt-14">
+        <img src="/images/continents.jpeg" className="w-full object-cover h-full absolute top-0 left-0" alt="" />
+          <div className="overlay bg-black opacity-80 absolute top-0 left-0 w-full h-full"></div>
+          <div className="relative text-white">
+            <h2 className="text-xl font-bold md:text-2xl text-center py-5">Contracts</h2>
+            {/* px-8 sm:px-16 md:px-20 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+                  <div className="space-y-1 md:space-y-3">
+                      <h1 className="text-lg font-bold mb-0 md:mb-7">America</h1>
+                      <p>Canada</p>
+                      <p>Brazil</p>
+                      <p>Mexico</p>
+                      <p>USA</p>
+                  </div>
+                  <div className="space-y-1 md:space-y-3">
+                      <h1 className="text-lg font-bold mb-0 md:mb-7">America</h1>
+                      <p>Canada</p>
+                      <p>Brazil</p>
+                      <p>Mexico</p>
+                      <p>USA</p>
+                  </div>
+                  <div className="space-y-1 md:space-y-3">
+                      <h1 className="text-lg font-bold mb-0 md:mb-7">America</h1>
+                      <p>Canada</p>
+                      <p>Brazil</p>
+                      <p>Mexico</p>
+                      <p>USA</p>
+                  </div>
+                  <div className="space-y-1 md:space-y-3">
+                      <h1 className="text-lg font-bold mb-0 md:mb-7">America</h1>
+                      <p>Canada</p>
+                      <p>Brazil</p>
+                      <p>Mexico</p>
+                      <p>USA</p>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      {/* Success rate */}
+      <section className=" bg-slate-200 relative py-10 my-10 ">
+        <img src="/images/tragectory.png" className="w-full object-cover h-full absolute top-0 left-0" alt="" />
+          <div className="overlay bg-black opacity-90 absolute top-0 left-0 w-full h-full"></div>
+          <div className="relative text-white">
+            {/* <h2 className="text-lg md:text-2xl text-center py-5">Annual labor export success in Kenya</h2> */}
+          <SuccesfulDeproyment/>
+          </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   );
 }

@@ -1,0 +1,104 @@
+
+{
+  "barData1": {
+    "labels": ["Jobs Needed"],
+    "datasets": [
+      {
+        "label": "Engineering",
+        "data": [5478],
+        "backgroundColor": ["#2ab148"]
+      },
+      {
+        "label": "Science",
+        "data": [3429],
+        "backgroundColor": ["#ea1821"]
+      },
+      {
+        "label": "Business",
+        "data": [4571],
+        "backgroundColor": ["#f9c10c"]
+      },
+      {
+        "label": "Healthcare",
+        "data": [2835],
+        "backgroundColor": ["#12939a"]
+      },
+      {
+        "label": "Education",
+        "data": [1987],
+        "backgroundColor": ["#e3f137"]
+      },
+      {
+        "label": "Information Technology",
+        "data": [3765],
+        "backgroundColor": ["#9c5ba0"]
+      },
+      {
+        "label": "Finance",
+        "data": [2640],
+        "backgroundColor": ["#f26725"]
+      }
+    ]
+  },
+    "barOptions1": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "title": {
+          "display": false,
+          "text": "Network Activity"
+        }
+      }
+    },
+    "pieChartData": {
+      "labels": ["Pending", "Approved", "Rejected"],
+      "datasets": [
+        {
+          "data": [30, 50, 20],
+          "backgroundColor": ["#ffcc00", "#00cc99", "#ff6666"]
+        }
+      ]
+    },
+    "pieOptions": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "title": {
+          "display": false,
+          "text": "Network Activity"
+        }
+      }
+    },"lineChartData": {
+      "labels": ["Jan", "Feb", "Mar", "Apr", "May", "June"],
+      "datasets": [
+        {
+          "label": "Worker Deployment",
+          "data": [100, 120, 90, 110, 130, 150],
+          "fill": false,
+          "borderColor": "#007bff",
+          "backgroundColor": "#007bff"
+        }
+      ]
+    },
+    "lineChartOptions": {
+      "responsive": true,
+      "maintainAspectRatio": false,
+      "plugins": {
+        "title": {
+          "display": false,
+          "text": "Network Activity"
+        }
+      }
+    },
+    "barChartData": {
+      "labels": ["China", "Canada", "United States", "United Kingdom", "Australia"],
+      "datasets": [
+        {
+          "label": "Total Job Requests",
+          "data": [300, 250, 200, 180, 150],
+          "backgroundColor": ["#ffcc00", "#00cc99", "#ff6666", "#3399ff", "#ff9900"]
+        }
+      ]
+    }
+    }
+  
