@@ -5,10 +5,10 @@ import Link from 'next/link';
 function Login() {
   return (
     <main className='min-h-screen flex flex-col items-center py-2'>
-        <h1 className='my-2 text-lg md:text-xl'>Login</h1>
+        <h1 className='my-2 font-bold text-2xl md:text-3xl'>Login</h1>
         <div className='w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] border-b border-teal-600'></div>
         <h1 className='my-2 text-lg md:text-xl '>Choose Your Account Type</h1>
-        <Link href={"/login/admin/gok"} className='w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] cursor-pointer hover:bg-slate-50 my-4  text-gray-700 p-3 border border-gray-800 hover:border-blue-500 rounded-lg flex justify-between items-center group'>
+        {/* <Link href={"/login/admin/gok"} className='w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] cursor-pointer hover:bg-slate-50 my-4  text-gray-700 p-3 border border-gray-800 hover:border-blue-500 rounded-lg flex justify-between items-center group'>
            <span>
                 <h1 className='font-semibold mb-2'>GOK</h1>
                 <p>For GOK Administration</p>
@@ -16,7 +16,7 @@ function Login() {
             <p className='opacity-0 group-hover:opacity-100 duration-700 ease-in-out bg-green-500 p-1 rounded-full'>
                 <TiTick color='white' />
             </p>
-        </Link>
+        </Link> */}
         <Link href={"/login/citizen"} className='w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] cursor-pointer hover:bg-slate-50 my-4  text-gray-700 p-3 border border-gray-800 hover:border-blue-500 rounded-lg flex justify-between items-center group'>
            <span>
                 <h1 className='font-semibold mb-2'>Citizen</h1>

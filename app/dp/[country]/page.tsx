@@ -1,13 +1,25 @@
 import React from "react";
 import StateNav from "@/components/states/state-navigation";
+import { CountryContext } from "@/context/countryContext";
 
-function State() {
+interface StateParams {
+  country: string;
+}
+function State({params: StateParams}: {params: StateParams}) {
+
+  const country = StateParams.country
+  console.log(country);
+
+  
+
+  // const contry=params.country
   const handleSubmitToGovernment = () => {
     // Logic for submitting approved job requests to the Kenyan government
     console.log("Submitting approved job requests to the Kenyan government...");
   };
 
   return (
+    // <CountryContext.Provider value={country}>
     <main className="min-h-screen">
       <StateNav />
       <div className="sm:ml-64 w-full sm:w-auto fixed sm:static top-0  bg-[#151515] h-14 border-b-2 flex justify-center items-center ">
@@ -166,6 +178,7 @@ function State() {
         </div>
       </div>
     </main>
+    // </CountryContext.Provider>
   );
 }
 

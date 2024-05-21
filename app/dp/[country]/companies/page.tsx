@@ -12,7 +12,7 @@ const Company = () => {
   return (
     <main>
       <StateNav />
-      <div className="sm:ml-64 w-full sm:w-auto fixed sm:static top-0  bg-[#151515] h-14 border-b-2 flex justify-center items-center ">
+      <div className="sm:ml-64 w-full sm:w-auto fixed sm:static top-0  bg-[#13161E]  h-14 border-b-2 flex justify-center items-center ">
         <h1 className="text-2xl font-bold text-white">Companies</h1>
       </div>
     <div className="sm:ml-64 mt-14 sm:mt-0 mx-auto p-4">

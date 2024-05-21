@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Register() {
   return (
     <main className='min-h-screen flex flex-col items-center py-2'>
-         <h1 className='my-2 text-lg md:text-xl'>Register</h1>
+         <h1 className='my-2 font-bold text-2xl md:text-3xl'>Register</h1>
         <div className='w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] border-b border-teal-600'></div>
         <h1 className='my-2 text-lg md:text-xl '>Choose Your Account Type</h1>
         <Link href={"/register/citizen"} className='w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] cursor-pointer hover:bg-slate-50 my-4  text-gray-700 p-3 border border-gray-800 hover:border-blue-500 rounded-lg flex justify-between items-center group'>
@@ -35,6 +35,9 @@ function Register() {
                 <TiTick color='white' />
             </p>
         </Link>
+
+        {/* already having an account? sign here */}
+        <Link href={"/login"} className='text-blue-500 text-sm'>Already have an account? Sign in</Link>
        
     </main>
   )

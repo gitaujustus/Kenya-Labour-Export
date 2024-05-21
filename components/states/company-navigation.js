@@ -9,7 +9,7 @@ import { FaBell } from "react-icons/fa";
 import { CiLogout } from "react-icons/ci";
 
 
-function StateNav() {
+function CompanyNav() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef(null);
 
@@ -84,15 +84,15 @@ function StateNav() {
         aria-label="Sidebar"
         ref={sidebarRef}
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-[#151515]  ">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-[#13161E]  ">
         
           <div className="flex justify-between
                  gap-2 items-center ps-2.5 mb-8 ">
                     <div className='flex'>
                         <FaUserCircle className='text-white mr-2' size={32} />
                             <div className='text-white text-left'>
-                                    <span className="self-center text-2xl font-semibold whitespace-nowrap">Country Name</span>
-                                    <p>Agency</p>
+                                    <span className="self-center text-2xl font-semibold whitespace-nowrap">Company Name</span>
+                                    <p>Manager</p>
                             </div>
                     </div>
                 </div>
@@ -119,26 +119,7 @@ function StateNav() {
             </li>
             <li onClick={toggleNavbar}>
               <Link
-                href="/dp/state/companies"
-                className="flex items-center p-2 text-gray-200 rounded-lg  hover:bg-gray-600  group"
-              >
-               <FaBriefcase size={20} className='text-[#9CA3AF] group-hover:text-white'/>
-                <span className="ms-3">Companies</span>
-              </Link>
-            </li>
-            <li onClick={toggleNavbar}>
-              <Link
-                href="/dp/state/updates"
-                className="flex items-center p-2 text-gray-200 rounded-lg  hover:bg-gray-600  group"
-              >
-              <PiBriefcaseFill size={22} className='text-[#9CA3AF] group-hover:text-white'/>
-
-                <span className="ms-3">Updates</span>
-              </Link>
-            </li>
-            <li onClick={toggleNavbar}>
-              <Link
-                href="/dp/state/signout"
+                href="/admin/updates"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
               <CiLogout size={22} className='text-[#9CA3AF] group-hover:text-white'/>
@@ -152,5 +133,5 @@ function StateNav() {
   )
 }
 
-export default StateNav
+export default CompanyNav
 

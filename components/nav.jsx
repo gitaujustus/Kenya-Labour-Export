@@ -63,10 +63,10 @@ function Navbar() {
       {/* for small screen */}
         <ul className='flex md:hidden gap-1'>
             <li>
-                <Link href="/research-support" onClick={() => setIsOpen(false)}  className={`hidden md:block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
+                <Link href="/login" onClick={() => setIsOpen(false)}  className={`hidden md:block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
                 </li>
                 <li>
-                <Link href="/research-support" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f] md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
+                <Link href="/register" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f] md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
             </li> 
         </ul>
         <button
@@ -93,7 +93,7 @@ function Navbar() {
             </li>
 
             <li>
-            <Link href="/help" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-100"} `}>Help&nbsp;&&nbsp;Support</Link>
+            <Link href="/help&support" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-100"} `}>Help&nbsp;&&nbsp;Support</Link>
             </li>
             <li>
             <Link href="/admin" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-100"} `}>About&nbsp;Us</Link>
