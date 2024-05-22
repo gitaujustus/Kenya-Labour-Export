@@ -16,7 +16,7 @@ export default function Component() {
           <div className="space-y-2 text-center">
             <h1 className="text-3xl font-bold">Contact Us</h1>
             <p className="text-gray-500 dark:text-gray-400">
-              Fill out the form below and we'll get back to you as soon as possible.
+              Fill out the form below and we&apos;ll get back to you as soon as possible.
             </p>
           </div>
           <form className="space-y-4">

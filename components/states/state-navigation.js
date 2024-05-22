@@ -17,33 +17,34 @@ function StateNav() {
     setIsOpen(!isOpen)
   }
 
- 
-
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     };
-  
+
     const handleMenuClick = (event) => {
       if (event.target.tagName === 'A') {
         setIsOpen(false);
       }
     };
-  
+
+    // Store the current value of sidebarRef.current
+    const currentSidebarRef = sidebarRef.current;
+
     // Add event listeners
     document.addEventListener('mousedown', handleOutsideClick);
-    if (sidebarRef.current) {
-      sidebarRef.current.addEventListener('click', handleMenuClick);
+    if (currentSidebarRef) {
+      currentSidebarRef.addEventListener('click', handleMenuClick);
     }
-  
+
     // Cleanup function
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
-      // Check if sidebarRef.current is not null before removing the event listener
-      if (sidebarRef.current) {
-        sidebarRef.current.removeEventListener('click', handleMenuClick);
+      // Use the stored value of sidebarRef.current
+      if (currentSidebarRef) {
+        currentSidebarRef.removeEventListener('click', handleMenuClick);
       }
     };
   }, []);

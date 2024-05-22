@@ -72,7 +72,7 @@ export default function Home() {
             <p className="">
               {" "}
               Partnering with 20+ countries across Asia, Europe, Africa, and the
-              Americas, we're dedicated to creating employment opportunities for
+              Americas, we&apos;re dedicated to creating employment opportunities for
               Kenyan citizens. With over 3000 vacancies monthly, we offer
               diverse job options, fostering career growth and economic
               prosperity.

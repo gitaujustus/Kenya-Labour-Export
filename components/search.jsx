@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-function search() {
+function Search() {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to track dropdown visibility
 
@@ -51,4 +51,4 @@ function search() {
   )
 }
 
-export default search
+export default Search

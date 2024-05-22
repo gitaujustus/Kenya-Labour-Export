@@ -96,9 +96,14 @@ export default function Component() {
 
   const FAQs = [
     {
+      question: "What is the Kenyan Labor Export System (KLES)?",
+      answer:
+        "The Kenyan Labor Export System (KLES) is a platform that facilitates the matching and export of Kenyan labor to foreign employers. It involves collaboration between the Kenyan Government, foreign governments, and foreign companies to provide job opportunities abroad for qualified Kenyan workers.",
+    },
+    {
       question: "How do I register and apply for job on the KLES platform?",
       answer:
-        "To register on KLES, visit our website and click on the Register button. Fill in your personal details, upload the required documents such as your CV/resume, certificates, health status, and language proficiency proof, and submit your registration. You will receive a confirmation email upon successful registration.",
+        "To register on KLES, visit our website and click on the Register button. Fill in your personal details and submit your registration. You will receive a confirmation email upon successful registration.",
     },
     {
       question: "What types of job opportunities are available through KLES?",
@@ -111,9 +116,14 @@ export default function Component() {
         "Once registered, you can browse through the job listings on KLES and apply to positions that match your skills and interests. Follow the application instructions provided by each job posting, which may include submitting your CV/resume, cover letter, and additional documents as required.",
     },
     {
-      question: "Is there a fee for registering or applying for jobs on KLES?",
+      question: "How are job applications processed in KLES?",
       answer:
-        "No, there are no registration fees or charges for applying to job vacancies on KLES. Our platform is free for both Kenyan workers and foreign companies looking to connect for labor export opportunities.",
+        "After you submit a job application, the Kenyan Government screens your application to ensure you meet the job requirements. If you pass the screening process, your application is forwarded to the foreign government, which then coordinates with the foreign employer to finalize the hiring process.",
+    },
+    {
+      question: "What should I do if I encounter issues while using KLES?",
+      answer:
+        "If you encounter any issues while using KLES, you can contact our support team through the 'Help & Support' section on the platform.",
     },
   ];
 

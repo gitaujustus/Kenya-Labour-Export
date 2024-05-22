@@ -3,8 +3,7 @@ import Topbar from "@/components/gok/topbar";
 export default function Component() {
     return (
         <main >
-            {/* <Topbar/> */}
-            <div className="sm:ml-64 mt-14 sm:mt-0 flex min-h-[90vh] items-center justify-center bg-gray-100 ">
+            <div className="flex min-h-[90vh] items-center justify-center bg-gray-100 ">
                 <div className="w-full max-w-md bg-white rounded-lg shadow-md ">
                 <div className="p-6 space-y-2 text-center">
                     <h2 className="text-xl font-bold">Sign Out</h2>

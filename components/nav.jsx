@@ -2,9 +2,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaUserCircle } from "react-icons/fa";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import UserProfileCard from '@/components/userProfilecard'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [logedin, isLogedin] = useState(false);
+  const [isCardVisible, setIsCardVisible] = useState(false);
+ 
+
   const navRef = useRef(null);
 
   const toggleMenu = () => {
@@ -57,16 +64,14 @@ function Navbar() {
     <p className='font-bold'>KLES</p>
   </div>
 </div>
-
-
        <div className='flex gap-4'>
       {/* for small screen */}
         <ul className='flex md:hidden gap-1'>
             <li>
-                <Link href="/login" onClick={() => setIsOpen(false)}  className={`hidden md:block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
+                <Link href="/login" onClick={() => setIsOpen(false)}  className={`hidden md:block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/login" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
                 </li>
                 <li>
-                <Link href="/register" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f] md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
+                <Link href="/register" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f] md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/register" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
             </li> 
         </ul>
         <button
@@ -93,20 +98,46 @@ function Navbar() {
             </li>
 
             <li>
-            <Link href="/help&support" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-100"} `}>Help&nbsp;&&nbsp;Support</Link>
+            <Link href="/help&support" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/help&support" ? "text-secondary" : "md:text-gray-100"} `}>Help&nbsp;&&nbsp;Support</Link>
             </li>
             <li>
-            <Link href="/admin" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-100"} `}>About&nbsp;Us</Link>
+            <Link href="/admin" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-100  rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-secondary  md:p-0 ${pathname === "/aboutus" ? "text-secondary" : "md:text-gray-100"} `}>About&nbsp;Us</Link>
             </li>
           </ul>
+          {!logedin && (
           <ul className='hidden md:flex gap-2'>
             <li>
-                <Link href="/login" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
+                <Link href="/login" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  ${pathname === "/login" ? "text-secondary" : "md:text-gray-800"} `}>Login</Link>
                 </li>
                 <li>
-                <Link href="/register" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  ${pathname === "/research-support" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
+                <Link href="/register" onClick={() => setIsOpen(false)}  className={`block py-2 px-3 text-gray-50  rounded bg-[#48af6e] hover:bg-[#54ca7f]  ${pathname === "/register" ? "text-secondary" : "md:text-gray-800"} `}>Register</Link>
             </li> 
         </ul>
+         )}
+          {logedin && (
+            <div>
+              <ul className='hidden md:flex  gap-2'
+                  onClick={()=>setIsCardVisible(!isCardVisible)}
+              >
+              <li>
+                  <button
+                     onClick={() => setIsOpen(false)}  className={`flex bg items-center gap-2 py-2 px-3 text-gray-50  rounded  ${pathname === "/profile" ? "text-secondary" : "md:text-gray-800"} `}>
+                      <FaUserCircle size={32} className='text-2xl text-[#48af6e] hover:text-[#54ca7f]' />
+                      <span className='hidden md:block text-gray-300'>Profile</span>
+                      
+                      
+                  </button>
+                  </li>
+            </ul>
+
+            {isCardVisible && (
+              <UserProfileCard/>
+            )}
+            </div>
+          )}
+       
+         
+
         </div>
 
       </div>
@@ -115,3 +146,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+

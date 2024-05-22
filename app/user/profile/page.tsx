@@ -2,11 +2,11 @@ export default function Component() {
     return (
       <div className="flex flex-col items-center justify-center gap-6 p-8 md:flex-row md:items-start md:gap-12 min-h-[90vh]">
         <div className="h-20 w-20 bg-gray-900 text-white rounded-full flex items-center justify-center dark:bg-gray-50 dark:text-gray-900">
-          <span className="text-xl font-bold">JD</span>
+          <span className="text-xl font-bold">JG</span>
         </div>
         <div className="grid w-full max-w-md gap-4">
           <div className="grid gap-1">
-            <h2 className="text-2xl font-bold">John Doe</h2>
+            <h2 className="text-2xl font-bold">Justus Gitau</h2>
             <p className="text-gray-500 dark:text-gray-400">ID: 12345678</p>
           </div>
           <div className="grid gap-2">

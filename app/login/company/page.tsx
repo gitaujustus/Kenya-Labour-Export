@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import createCitizenAccount from '@/app/actions/createCitizenAccount';
 import { CgAsterisk } from "react-icons/cg";
